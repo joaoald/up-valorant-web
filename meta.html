@@ -1,0 +1,141 @@
+<!--
+    Projeto: Guia Tático VALORANT
+    Disciplina: Desenvolvimento Front-End para Web
+    Autores: João Manuel Ferreira Alduan e Isaque Almeida Costa
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta e Estatísticas - Guia Tático VALORANT</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark text-white">
+    <header id="main-header">
+        <div class="container">
+            <nav class="d-flex flex-wrap justify-content-between align-items-center">
+                <div class="d-flex align-items-center my-2">
+                    <img src="img/logo.png" alt="Logo VALORANT" class="brand-logo">
+                    <span class="fs-4 fw-bold text-white">GUIA TÁTICO VALORANT</span>
+                </div>
+                <ul class="nav-menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="agents.html">Agentes</a></li>
+                    <li><a href="maps.html">Mapas</a></li>
+                    <li><a href="meta.html" class="active-link">Meta</a></li>
+                    <li><a href="weapons.html">Arsenal</a></li>
+                    <li><a href="map-details.html">Guia Ascent</a></li>
+                    <li><a href="agent-details.html">Guia Jett</a></li>
+                    <li><a href="community.html">Comunidade</a></li>
+                    <li><a href="comp-builder.html">Criador Tático</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="https://playvalorant.com/pt-br/" target="_blank">Site Oficial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <section class="section-box my-3">
+            <h1 class="fw-bold">Estatísticas do Meta e Tier List por Mapa</h1>
+            <p class="text-secondary">Acompanhe os agentes mais escolhidos e com maior taxa de vitória nas filas competitivas e campeonatos oficiais.</p>
+        </section>
+
+        <section class="my-3">
+            <div class="row">
+                <div class="col-lg-8">
+                    <article class="section-box">
+                        <h3>Tabela Oficial de Desempenho por Mapa</h3>
+                        <table class="meta-table">
+                            <caption>Estatísticas competitivas consolidadas do Episódio Atual</caption>
+                            <thead>
+                                <tr>
+                                    <th>Mapa</th>
+                                    <th>Agente Destaque</th>
+                                    <th>Taxa de Escolha (%)</th>
+                                    <th>Taxa de Vitória (%)</th>
+                                    <th>Tier</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ascent</td>
+                                    <td>Jett</td>
+                                    <td>78%</td>
+                                    <td>53.4%</td>
+                                    <td>Tier S</td>
+                                </tr>
+                                <tr>
+                                    <td>Bind</td>
+                                    <td>Raze</td>
+                                    <td>74%</td>
+                                    <td>52.8%</td>
+                                    <td>Tier S</td>
+                                </tr>
+                                <tr>
+                                    <td>Haven</td>
+                                    <td>Omen</td>
+                                    <td>81%</td>
+                                    <td>51.9%</td>
+                                    <td>Tier S</td>
+                                </tr>
+                                <tr>
+                                    <td>Split</td>
+                                    <td>Killjoy</td>
+                                    <td>64%</td>
+                                    <td>52.1%</td>
+                                    <td>Tier A</td>
+                                </tr>
+                                <tr>
+                                    <td>Lotus</td>
+                                    <td>Viper</td>
+                                    <td>69%</td>
+                                    <td>50.8%</td>
+                                    <td>Tier A</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunset</td>
+                                    <td>Sova</td>
+                                    <td>66%</td>
+                                    <td>51.5%</td>
+                                    <td>Tier A</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th colspan="2">Média Geral Competitiva</th>
+                                    <th>72.0%</th>
+                                    <th>52.1%</th>
+                                    <th>Meta Estável</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </article>
+                </div>
+
+                <div class="col-lg-4">
+                    <aside class="aside-panel">
+                        <h4>Como Ler a Tier List</h4>
+                        <p><strong>Tier S:</strong> Agentes essenciais que definem a estratégia principal do mapa.</p>
+                        <p><strong>Tier A:</strong> Excelentes escolhas que complementam qualquer composição tática.</p>
+                        <p><strong>Tier B:</strong> Escolhas situacionais que dependem de táticas específicas da equipe.</p>
+                        <a href="comp-builder.html" class="btn btn-danger btn-red mt-2">Planejar Composição</a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p class="mb-0">Projeto Acadêmico - Desenvolvimento Front-End para Web | Guia Tático VALORANT</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

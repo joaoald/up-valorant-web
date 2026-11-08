@@ -1,0 +1,147 @@
+<!--
+    Projeto: Guia Tático VALORANT
+    Disciplina: Desenvolvimento Front-End para Web
+    Autores: João Manuel Ferreira Alduan e Isaque Almeida Costa
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador Tático - Guia Tático VALORANT</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/pure.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="pure-container">
+            <nav>
+                <div class="brand-area">
+                    <img src="img/logo.png" alt="Logo VALORANT" class="brand-logo">
+                    <a href="index.html" class="brand-title">GUIA TÁTICO VALORANT</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="agents.html">Agentes</a></li>
+                    <li><a href="maps.html">Mapas</a></li>
+                    <li><a href="meta.html">Meta</a></li>
+                    <li><a href="weapons.html">Arsenal</a></li>
+                    <li><a href="map-details.html">Guia Ascent</a></li>
+                    <li><a href="agent-details.html">Guia Jett</a></li>
+                    <li><a href="community.html">Comunidade</a></li>
+                    <li><a href="comp-builder.html" class="active-link">Criador Tático</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="https://playvalorant.com/pt-br/" target="_blank">Site Oficial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pure-container">
+        <div class="flex-row">
+            <div class="main-column">
+                <section>
+                    <h1>Cadastrar Nova Tática ou Composição</h1>
+                    <div class="form-group">
+                        <label for="map-select">Escolha o Mapa:</label>
+                        <select id="map-select" name="mapSelect">
+                            <option value="Abyss">Abyss</option>
+                            <option value="Ascent">Ascent</option>
+                            <option value="Bind">Bind</option>
+                            <option value="Breeze">Breeze</option>
+                            <option value="Corrode">Corrode</option>
+                            <option value="Fracture">Fracture</option>
+                            <option value="Haven">Haven</option>
+                            <option value="Icebox">Icebox</option>
+                            <option value="Lotus">Lotus</option>
+                            <option value="Pearl">Pearl</option>
+                            <option value="Split">Split</option>
+                            <option value="Sunset">Sunset</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="agent-select">Escolha o Agente Principal:</label>
+                        <select id="agent-select" name="agentSelect">
+                            <option value="Astra">Astra</option>
+                            <option value="Breach">Breach</option>
+                            <option value="Brimstone">Brimstone</option>
+                            <option value="Chamber">Chamber</option>
+                            <option value="Clove">Clove</option>
+                            <option value="Cypher">Cypher</option>
+                            <option value="Deadlock">Deadlock</option>
+                            <option value="Fade">Fade</option>
+                            <option value="Gekko">Gekko</option>
+                            <option value="Harbor">Harbor</option>
+                            <option value="Iso">Iso</option>
+                            <option value="Jett">Jett</option>
+                            <option value="KAY/O">KAY/O</option>
+                            <option value="Killjoy">Killjoy</option>
+                            <option value="Neon">Neon</option>
+                            <option value="Omen">Omen</option>
+                            <option value="Phoenix">Phoenix</option>
+                            <option value="Raze">Raze</option>
+                            <option value="Reyna">Reyna</option>
+                            <option value="Sage">Sage</option>
+                            <option value="Skye">Skye</option>
+                            <option value="Sova">Sova</option>
+                            <option value="Tejo">Tejo</option>
+                            <option value="Viper">Viper</option>
+                            <option value="Vyse">Vyse</option>
+                            <option value="Waylay">Waylay</option>
+                            <option value="Yoru">Yoru</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="strategy-note">Descrição da Estratégia (Opcional):</label>
+                        <textarea id="strategy-note" name="strategyNote" rows="4" placeholder="Descreva a execução ou posicionamento para este mapa..."></textarea>
+                    </div>
+
+                    <div>
+                        <button type="button" id="save-btn">Salvar Tática</button>
+                        <button type="button" id="clear-btn">Limpar Tudo</button>
+                    </div>
+
+                    <div id="builder-feedback" class="status-message">
+                        Preencha os campos acima e clique em Salvar Tática para armazenar no navegador.
+                    </div>
+                </section>
+            </div>
+
+            <div class="side-column">
+                <aside>
+                    <h3>Como Funciona o Painel</h3>
+                    <article>
+                        <h4>Armazenamento Local</h4>
+                        <p>Suas táticas ficam salvas no <strong>localStorage</strong> do navegador e permanecem disponíveis mesmo ao atualizar a página.</p>
+                    </article>
+                </aside>
+            </div>
+        </div>
+
+        <section>
+            <h2>Táticas e Composições Salvas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mapa</th>
+                        <th>Agente</th>
+                        <th>Função</th>
+                        <th>Estratégia</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="tactics-table-body">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <p>Projeto Acadêmico - Desenvolvimento Front-End para Web | Guia Tático VALORANT</p>
+    </footer>
+
+    <script src="js/pure.js"></script>
+</body>
+</html>

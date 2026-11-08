@@ -1,0 +1,121 @@
+<!--
+    Projeto: Guia Tático VALORANT
+    Disciplina: Desenvolvimento Front-End para Web
+    Autores: João Manuel Ferreira Alduan e Isaque Almeida Costa
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Guia Tático VALORANT</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark text-white">
+    <header id="main-header">
+        <div class="container">
+            <nav class="d-flex flex-wrap justify-content-between align-items-center">
+                <div class="d-flex align-items-center my-2">
+                    <img src="img/logo.png" alt="Logo VALORANT" class="brand-logo">
+                    <span class="fs-4 fw-bold text-white">GUIA TÁTICO VALORANT</span>
+                </div>
+                <ul class="nav-menu-list">
+                    <li><a href="index.html" class="active-link">Home</a></li>
+                    <li><a href="agents.html">Agentes</a></li>
+                    <li><a href="maps.html">Mapas</a></li>
+                    <li><a href="meta.html">Meta</a></li>
+                    <li><a href="weapons.html">Arsenal</a></li>
+                    <li><a href="map-details.html">Guia Ascent</a></li>
+                    <li><a href="agent-details.html">Guia Jett</a></li>
+                    <li><a href="community.html">Comunidade</a></li>
+                    <li><a href="comp-builder.html">Criador Tático</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="https://playvalorant.com/pt-br/" target="_blank">Site Oficial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="alert alert-danger my-3" role="alert">
+            <strong>Aviso de Atualização (Patch Atual):</strong> Rotação competitiva atualizada e ajustes de balanceamento aplicados para os agentes da temporada!
+        </div>
+
+        <section class="section-box my-3">
+            <div class="row">
+                <div class="col-lg-8">
+                    <article>
+                        <h1 class="fw-bold">Bem-vindo ao Guia Tático VALORANT</h1>
+                        <p class="text-secondary">Domine os fundamentos táticos de tiro em primeira pessoa 5v5. Aprenda posicionamento de mira, economia de créditos, execução de habilidades e estratégias para vencer mais partidas ranqueadas.</p>
+                        <h3 class="mt-4">Trailer Tático Oficial</h3>
+                        <video width="100%" controls>
+                            <source src="video/valorant-trailer.mp4" type="video/mp4">
+                            Seu navegador não suporta a reprodução de vídeo.
+                        </video>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <aside class="aside-panel mt-3 mt-lg-0">
+                        <h4>Áudio de Jogo: Defuse da Spike</h4>
+                        <p>Escute o efeito sonoro de desarme da Spike para treinar seu tempo de reação em situações de Clutch:</p>
+                        <audio controls>
+                            <source src="audio/spike-defuse.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                        <hr>
+                        <h5>Resumo Rápido</h5>
+                        <p>Tempo da Spike: 45 segundos para explodir e 7 segundos para desarmar completamente (3,5 segundos até a metade).</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-3">
+            <h2 class="mb-4">Destaques do Guia</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <img src="img/cards/card-agents.webp" class="card-img-top card-image" alt="Galeria de Agentes">
+                        <div class="card-body">
+                            <h5 class="card-title">Funções e Agentes</h5>
+                            <p class="card-text">Conheça os Duelistas, Controladores, Iniciadores e Sentinelas ideais para cada estilo de jogo.</p>
+                            <a href="agents.html" class="btn btn-danger btn-red">Explorar Agentes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <img src="img/cards/card-maps.jpg" class="card-img-top card-image" alt="Rotação de Mapas">
+                        <div class="card-body">
+                            <h5 class="card-title">Mapas Competitivos</h5>
+                            <p class="card-text">Estude os pontos de entrada, rotas de rotação e controle de orbes nos principais mapas do jogo.</p>
+                            <a href="maps.html" class="btn btn-danger btn-red">Ver Mapas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <img src="img/cards/card-meta.jpg" class="card-img-top card-image" alt="Estatísticas do Meta">
+                        <div class="card-body">
+                            <h5 class="card-title">Meta e Estatísticas</h5>
+                            <p class="card-text">Confira a tabela completa com taxas de escolha, taxas de vitória e Tier List atualizada.</p>
+                            <a href="meta.html" class="btn btn-danger btn-red">Consultar Meta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p class="mb-0">Projeto Acadêmico - Desenvolvimento Front-End para Web | Guia Tático VALORANT</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

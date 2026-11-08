@@ -1,0 +1,303 @@
+/*
+    Projeto: Guia Tático VALORANT
+    Disciplina: Desenvolvimento Front-End para Web
+    Autores: João Manuel Ferreira Alduan e Isaque Almeida Costa
+*/
+
+body {
+    background-color: #0f1923;
+    color: #ece8e1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    border-bottom: 3px solid #ff4655;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main {
+    display: block;
+    padding: 20px 0;
+}
+
+section {
+    background-color: #1a242d;
+    border: 1px solid #333333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+article {
+    background-color: #141c24;
+    border: 1px solid #333333;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+aside {
+    background-color: #1a242d;
+    border: 1px solid #ff4655;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #000000;
+    border-top: 3px solid #ff4655;
+    color: #ece8e1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #ece8e1;
+}
+
+input,
+select,
+textarea {
+    width: 96%;
+    padding: 10px;
+    background-color: #0f1923;
+    color: #ece8e1;
+    border: 2px solid #333333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    border: 2px solid #ff4655;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: #000000;
+    border: 2px solid #ff4655;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border: 2px solid #ff4655;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border: 2px solid #28a745;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #0f1923;
+}
+
+th,
+td {
+    border: 1px solid #333333;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #000000;
+    color: #ff4655;
+}
+
+tr:nth-child(2n) {
+    background-color: #141c24;
+}
+
+tr:hover {
+    background-color: #2c3b4a;
+}
+
+#main-header {
+    background-color: #000000;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#submit-btn,
+#save-btn {
+    width: auto;
+    background-color: #ff4655;
+    color: #ece8e1;
+    border: 2px solid #ff4655;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#submit-btn:hover,
+#save-btn:hover {
+    background-color: #cc3743;
+    color: #ffffff;
+}
+
+#clear-btn {
+    width: auto;
+    background-color: #000000;
+    color: #ff4655;
+    border: 2px solid #ff4655;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#clear-btn:hover {
+    background-color: #ff4655;
+    color: #ece8e1;
+}
+
+#main-footer {
+    font-size: 14px;
+}
+
+.pure-container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.brand-area {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+}
+
+.brand-title {
+    color: #ece8e1;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 4px;
+}
+
+.nav-menu a {
+    color: #ece8e1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 10px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-menu a:hover {
+    color: #ff4655;
+    background-color: #1a242d;
+    border-bottom: 2px solid #ff4655;
+}
+
+.nav-menu a.active-link {
+    color: #ff4655;
+    border-bottom: 2px solid #ff4655;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.main-column {
+    width: 64%;
+}
+
+.side-column {
+    width: 33%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.action-button {
+    background-color: #ff4655;
+    color: #ece8e1;
+    border: none;
+    padding: 8px 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #cc3743;
+}
+
+.status-message {
+    padding: 12px;
+    margin-top: 12px;
+    background-color: #000000;
+    border-left: 4px solid #ff4655;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .main-column,
+    .side-column {
+        width: 100%;
+    }
+}

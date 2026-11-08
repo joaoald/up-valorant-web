@@ -1,0 +1,342 @@
+<!--
+    Projeto: Guia Tático VALORANT
+    Disciplina: Desenvolvimento Front-End para Web
+    Autores: João Manuel Ferreira Alduan e Isaque Almeida Costa
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentes - Guia Tático VALORANT</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark text-white">
+    <header id="main-header">
+        <div class="container">
+            <nav class="d-flex flex-wrap justify-content-between align-items-center">
+                <div class="d-flex align-items-center my-2">
+                    <img src="img/logo.png" alt="Logo VALORANT" class="brand-logo">
+                    <span class="fs-4 fw-bold text-white">GUIA TÁTICO VALORANT</span>
+                </div>
+                <ul class="nav-menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="agents.html" class="active-link">Agentes</a></li>
+                    <li><a href="maps.html">Mapas</a></li>
+                    <li><a href="meta.html">Meta</a></li>
+                    <li><a href="weapons.html">Arsenal</a></li>
+                    <li><a href="map-details.html">Guia Ascent</a></li>
+                    <li><a href="agent-details.html">Guia Jett</a></li>
+                    <li><a href="community.html">Comunidade</a></li>
+                    <li><a href="comp-builder.html">Criador Tático</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="https://playvalorant.com/pt-br/" target="_blank">Site Oficial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <section class="section-box my-3">
+            <h1 class="fw-bold">Galeria Completa de Agentes (A-Z)</h1>
+            <p class="text-secondary">Cada agente pertence a uma das quatro funções táticas: Duelista, Controlador, Iniciador ou Sentinela. Uma equipe equilibrada combina essas funções para atacar e defender com eficiência.</p>
+            <button type="button" id="toggle-tips-btn" class="btn btn-danger btn-red mt-2">Mostrar / Ocultar Dicas de Funções</button>
+
+            <aside id="extra-tips-section" class="aside-panel mt-3 hidden-element">
+                <h4>Dicas Extras de Seleção de Agentes</h4>
+                <ul>
+                    <li><strong>Duelistas:</strong> Devem ser os primeiros a entrar no Spike Site criando espaço para o time.</li>
+                    <li><strong>Controladores:</strong> Bloqueiam a visão de operadores inimigos usando fumaças (smokes).</li>
+                    <li><strong>Iniciadores:</strong> Usam drones, flechas e flashes para revelar cantos antes da entrada.</li>
+                    <li><strong>Sentinelas:</strong> Protegem as costas da equipe contra flancos e travam avanços na defesa.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="my-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-astra.jpg" class="card-img-top card-image" alt="Agente Astra">
+                        <div class="card-body">
+                            <h5 class="card-title">Astra (Controladora)</h5>
+                            <p class="card-text">Agente ganense que utiliza energias cósmicas em sua forma astral para posicionar estrelas que viram fumaças, concussões ou poços gravitacionais.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-breach.jpg" class="card-img-top card-image" alt="Agente Breach">
+                        <div class="card-body">
+                            <h5 class="card-title">Breach (Iniciador)</h5>
+                            <p class="card-text">Homem-biônico sueco que dispara jatos cinéticos, flashes e abalos sísmicos através das paredes para forçar a abertura dos Spike Sites.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-brimstone.jpg" class="card-img-top card-image" alt="Agente Brimstone">
+                        <div class="card-body">
+                            <h5 class="card-title">Brimstone (Controlador)</h5>
+                            <p class="card-text">Comandante norte-americano cujo arsenal orbital lança três fumaças duradouras, Sinalizador Estimulante, projétil incendiário e Ataque Orbital.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-chamber.jpg" class="card-img-top card-image" alt="Agente Chamber">
+                        <div class="card-body">
+                            <h5 class="card-title">Chamber (Sentinela)</h5>
+                            <p class="card-text">Criador de armas francês que segura linhas longas com seu arsenal personalizado (Caçador de Cabeças e Tour de Force) e âncoras de teleporte.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-clove.jpg" class="card-img-top card-image" alt="Agente Clove">
+                        <div class="card-body">
+                            <h5 class="card-title">Clove (Controlador)</h5>
+                            <p class="card-text">Originárie da Escócia, Clove mantém o time protegido lançando fumaças mesmo após ser abatide e pode retornar à vida com sua Ultimate.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-cypher.jpg" class="card-img-top card-image" alt="Agente Cypher">
+                        <div class="card-body">
+                            <h5 class="card-title">Cypher (Sentinela)</h5>
+                            <p class="card-text">Informante do Marrocos que vigia cada movimento adversário usando Fios-armadilha, Jaulas Cibernéticas e sua Câmera de Vigilância.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-deadlock.jpg" class="card-img-top card-image" alt="Agente Deadlock">
+                        <div class="card-body">
+                            <h5 class="card-title">Deadlock (Sentinela)</h5>
+                            <p class="card-text">Agente norueguesa que posiciona sensores sônicos, barreiras de contenção e nanofios de alta tecnologia para travar execuções inimigas.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-fade.jpg" class="card-img-top card-image" alt="Agente Fade">
+                        <div class="card-body">
+                            <h5 class="card-title">Fade (Iniciadora)</h5>
+                            <p class="card-text">Caçadora de recompensas turca que usa o poder dos pesadelos para revelar trilhas de inimigos, prendê-los e deixá-los ensurdecidos.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-gekko.jpg" class="card-img-top card-image" alt="Agente Gekko">
+                        <div class="card-body">
+                            <h5 class="card-title">Gekko (Iniciador)</h5>
+                            <p class="card-text">Lidera criaturas caóticas como Wingman (que planta e desarma a Spike) e Dizzy, podendo recolhê-las pelo mapa para reutilizá-las no round.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-harbor.jpg" class="card-img-top card-image" alt="Agente Harbor">
+                        <div class="card-body">
+                            <h5 class="card-title">Harbor (Controlador)</h5>
+                            <p class="card-text">Vindo do litoral indiano, empunha tecnologia ancestral com domínio sobre a água para criar paredes curvas, escudos aquáticos e marés de avanço.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-iso.jpg" class="card-img-top card-image" alt="Agente Iso">
+                        <div class="card-body">
+                            <h5 class="card-title">Iso (Duelista)</h5>
+                            <p class="card-text">Mercenário chinês que reconfigura a energia do ambiente em escudos à prova de balas e isola adversários em uma arena de duelo individual.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-jett.jpg" class="card-img-top card-image" alt="Agente Jett">
+                        <div class="card-body">
+                            <h5 class="card-title">Jett (Duelista)</h5>
+                            <p class="card-text">Representando a Coreia do Sul, Jett tem um estilo de luta ágil e evasivo que permite avançar rapidamente e eliminar alvos antes que possam reagir.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-kayo.jpg" class="card-img-top card-image" alt="Agente KAY/O">
+                        <div class="card-body">
+                            <h5 class="card-title">KAY/O (Iniciador)</h5>
+                            <p class="card-text">Máquina de guerra construída para neutralizar Radiantes, suprimindo as habilidades inimigas com sua lâmina e granadas de luz.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-killjoy.jpg" class="card-img-top card-image" alt="Agente Killjoy">
+                        <div class="card-body">
+                            <h5 class="card-title">Killjoy (Sentinela)</h5>
+                            <p class="card-text">Inventora alemã que domina áreas inteiras com sua Torreta, Robô de Alarme, granadas Nanoenxame e seu dispositivo de Confinamento.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-neon.jpg" class="card-img-top card-image" alt="Agente Neon">
+                        <div class="card-body">
+                            <h5 class="card-title">Neon (Duelista)</h5>
+                            <p class="card-text">Agente filipina que avança em velocidade bioelétrica extrema, deslizando para surpreender adversários e disparando raios de alta precisão.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-omen.jpg" class="card-img-top card-image" alt="Agente Omen">
+                        <div class="card-body">
+                            <h5 class="card-title">Omen (Controlador)</h5>
+                            <p class="card-text">Caçador das sombras que aplica fumaças recarregáveis à distância, cega corredores inteiros com Paranoia e se teleporta pelo mapa.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-phoenix.jpg" class="card-img-top card-image" alt="Agente Phoenix">
+                        <div class="card-body">
+                            <h5 class="card-title">Phoenix (Duelista)</h5>
+                            <p class="card-text">Vindo do Reino Unido, Phoenix controla o fogo para curar a si mesmo, criar paredes flamejantes, cegar com Bola Curva e renascer com sua Ultimate.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-raze.jpg" class="card-img-top card-image" alt="Agente Raze">
+                        <div class="card-body">
+                            <h5 class="card-title">Raze (Duelista)</h5>
+                            <p class="card-text">Diretamente do Brasil, Raze usa explosivos pesados, cargas de demolição e seu Bumba para desentocar inimigos entrincheirados e abrir espaço.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-reyna.jpg" class="card-img-top card-image" alt="Agente Reyna">
+                        <div class="card-body">
+                            <h5 class="card-title">Reyna (Duelista)</h5>
+                            <p class="card-text">Criada no coração do México, Reyna domina o combate individual e consome orbes de alma após abates para se curar ou ficar intangível.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-sage.jpg" class="card-img-top card-image" alt="Agente Sage">
+                        <div class="card-body">
+                            <h5 class="card-title">Sage (Sentinela)</h5>
+                            <p class="card-text">Fortaleza chinesa capaz de bloquear passagens com seu Orbe de Barreira, atrasar avanços com Orbe de Lentidão, curar e reviver aliados.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-skye.jpg" class="card-img-top card-image" alt="Agente Skye">
+                        <div class="card-body">
+                            <h5 class="card-title">Skye (Iniciadora)</h5>
+                            <p class="card-text">Direto da Austrália, Skye lidera feras espirituais que cegam, rastreiam, causam concussão nos inimigos e curam os aliados em área.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-sova.jpg" class="card-img-top card-image" alt="Agente Sova">
+                        <div class="card-body">
+                            <h5 class="card-title">Sova (Iniciador)</h5>
+                            <p class="card-text">Especialista russo em reconhecimento que localiza adversários escondidos usando Flecha Rastreadora, Drone Coruja e Fúria do Caçador.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-tejo.jpg" class="card-img-top card-image" alt="Agente Tejo">
+                        <div class="card-body">
+                            <h5 class="card-title">Tejo (Iniciador)</h5>
+                            <p class="card-text">Consultor de inteligência veterano da Colômbia que utiliza orientação balística de precisão e drones furtivos para desalojar defensores.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-viper.jpg" class="card-img-top card-image" alt="Agente Viper">
+                        <div class="card-body">
+                            <h5 class="card-title">Viper (Controladora)</h5>
+                            <p class="card-text">Química dos Estados Unidos que utiliza dispositivos venenosos e sua Cortina Tóxica para dividir Spike Sites e deteriorar a vida inimiga.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-vyse.jpg" class="card-img-top card-image" alt="Agente Vyse">
+                        <div class="card-body">
+                            <h5 class="card-title">Vyse (Sentinela)</h5>
+                            <p class="card-text">Mestre dos metais que manipula metal líquido para erguer paredes indestrutíveis ao contato, espinhos e inutilizar as armas primárias inimigas.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-waylay.jpg" class="card-img-top card-image" alt="Agente Waylay">
+                        <div class="card-body">
+                            <h5 class="card-title">Waylay (Duelista)</h5>
+                            <p class="card-text">Radiante prismática da Tailândia que se transforma em pura luz para atravessar o campo de batalha e recuar em segurança em um piscar de olhos.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <article class="card card-custom">
+                        <img src="img/agents/agent-yoru.jpg" class="card-img-top card-image" alt="Agente Yoru">
+                        <div class="card-body">
+                            <h5 class="card-title">Yoru (Duelista)</h5>
+                            <p class="card-text">Nativo do Japão, Yoru abre fendas na realidade para infiltrar as linhas inimigas com passos falsos, clones, flashes e teleporte dimensional.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p class="mb-0">Projeto Acadêmico - Desenvolvimento Front-End para Web | Guia Tático VALORANT</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!--
+    Projeto: Guia Tático VALORANT
+    Disciplina: Desenvolvimento Front-End para Web
+    Autores: João Manuel Ferreira Alduan e Isaque Almeida Costa
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Guia Tático VALORANT</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/pure.css">
+    <style>
+        .embedded-highlight-box {
+            background-color: #141c24;
+            border-left: 4px solid #ff4655;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <div class="pure-container">
+            <nav>
+                <div class="brand-area">
+                    <img src="img/logo.png" alt="Logo VALORANT" class="brand-logo">
+                    <a href="index.html" class="brand-title">GUIA TÁTICO VALORANT</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="agents.html">Agentes</a></li>
+                    <li><a href="maps.html">Mapas</a></li>
+                    <li><a href="meta.html">Meta</a></li>
+                    <li><a href="weapons.html">Arsenal</a></li>
+                    <li><a href="map-details.html">Guia Ascent</a></li>
+                    <li><a href="agent-details.html">Guia Jett</a></li>
+                    <li><a href="community.html">Comunidade</a></li>
+                    <li><a href="comp-builder.html">Criador Tático</a></li>
+                    <li><a href="contact.html" class="active-link">Contato</a></li>
+                    <li><a href="https://playvalorant.com/pt-br/" target="_blank">Site Oficial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pure-container">
+        <div class="embedded-highlight-box">
+            <h1 style="color: #ff4655; margin-top: 0;">Fale com a Equipe Tática</h1>
+            <p>Envie suas sugestões de pixels, reporte atualizações do meta ou inscreva-se para colaborar com a comunidade do Guia Tático VALORANT.</p>
+        </div>
+
+        <div class="flex-row">
+            <div class="main-column">
+                <section>
+                    <h2>Formulário de Contato e Recrutamento</h2>
+                    <form id="contact-form" action="contact.html" method="get">
+                        <div class="form-group">
+                            <label for="player-name">Nome do Jogador:</label>
+                            <input type="text" id="player-name" name="playerName" placeholder="Ex: João Silva" required minlength="3">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="riot-id">Riot ID (Formato Nome#TAG):</label>
+                            <input type="text" id="riot-id" name="riotId" placeholder="Ex: Jogador#BR1" required pattern="[A-Za-z0-9]+#[A-Za-z0-9]{3,5}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="player-email">E-mail de Contato:</label>
+                            <input type="email" id="player-email" name="playerEmail" placeholder="Ex: jogador@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject-role">Assunto / Função Principal:</label>
+                            <select id="subject-role" name="subjectRole" required>
+                                <option value="">Selecione uma opção...</option>
+                                <option value="duelist">Sugestão de Entrada (Duelista)</option>
+                                <option value="controller">Sugestão de Smokes (Controlador)</option>
+                                <option value="initiator">Sugestão de Pixel (Iniciador)</option>
+                                <option value="sentinel">Sugestão de Setup (Sentinela)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tactical-message">Mensagem ou Descrição Tática:</label>
+                            <textarea id="tactical-message" name="tacticalMessage" rows="5" placeholder="Descreva sua dúvida ou sugestão com pelo menos 10 caracteres..." required minlength="10"></textarea>
+                        </div>
+
+                        <input type="submit" id="submit-btn" value="Enviar Mensagem">
+                    </form>
+
+                    <div id="contact-feedback" class="status-message">
+                        Preencha todos os campos obrigatórios acima e clique em Enviar Mensagem.
+                    </div>
+                </section>
+            </div>
+
+            <div class="side-column">
+                <aside>
+                    <h3>Regras de Preenchimento</h3>
+                    <article>
+                        <h4>Formato do Riot ID</h4>
+                        <p>Digite seu apelido sem espaços seguido do símbolo <strong>#</strong> e sua TAG de 3 a 5 letras ou números (exemplo: <strong>JettMain#BR1</strong>).</p>
+                    </article>
+                    <article>
+                        <h4>Validação Automática</h4>
+                        <p>Os campos possuem borda vermelha enquanto inválidos e ficam com borda verde assim que preenchidos corretamente.</p>
+                    </article>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        <p>Projeto Acadêmico - Desenvolvimento Front-End para Web | Guia Tático VALORANT</p>
+    </footer>
+
+    <script src="js/pure.js"></script>
+</body>
+</html>
